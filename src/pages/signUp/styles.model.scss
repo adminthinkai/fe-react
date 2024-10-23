@@ -1,0 +1,62 @@
+@import "./../../common/styles/variables";
+
+.containerS {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  .wrapper {
+
+  }
+
+  .gradient_wrapper {
+    background-image: url("src/assets/png/img.png");
+    background-size: cover;
+    display: flex;
+    width: 50vw;
+    height: 100vh;
+    margin-right: -5vw;
+    z-index: 1;
+    overflow: hidden;
+  }
+
+  .containerAuth {
+    z-index: 1000;
+    position: relative;
+    display: flex;
+    width: 55vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    .containerAuth:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 50px;
+      height: 50px;
+      background-color: red; /* Цвет псевдоэлемента, чтобы создать белое закругление */
+      border-radius: 0 0 50px 0; /* Противоположное закругление */
+      transform: translate(-50%, -50%); /* Смещение для выемки */
+    }
+    .authWrapper {
+      display: flex;
+      background: var(--1, rgba(86, 197, 150, 0.30));
+      flex-direction: column;
+      border-radius: 50px;
+
+      .navigationWrapper {
+        display: flex;
+        padding: 30px 50px;
+        gap: 40px
+      }
+
+      .loginForm {
+        display: flex;
+        background: var(--1, rgba(86, 197, 150, 1));
+        padding: 50px;
+        flex-direction: column;
+        border-radius: 50px;
+      }
+    }
+  }
+}

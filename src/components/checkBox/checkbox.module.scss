@@ -1,0 +1,28 @@
+.custom-checkbox {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-color: #E3FCEC; /* Light green background */
+  border: 2px solid #D1F8D7; /* Light green border */
+  border-radius: 4px;
+  position: relative;
+  cursor: pointer;
+}
+
+.custom-checkbox:checked {
+  background-color: #A7F3D0; /* Green background when checked */
+  border-color: #A7F3D0; /* Green border when checked */
+}
+
+.custom-checkbox:checked::after {
+  content: '✓';
+  color: #065F46; /* Dark green checkmark */
+  font-size: 18px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -1,0 +1,8 @@
+.apexcharts-legend {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.apexcharts-legend-series {
+    flex: 1 1 50%; /* 50% ширины для двух столбцов */
+}

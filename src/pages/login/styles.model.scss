@@ -1,0 +1,46 @@
+@import "./../../common/styles/variables";
+
+.containerS {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+
+
+  .gradient_wrapper {
+    display: flex;
+    width: 40vw;
+    height: 100vh;
+
+    overflow: hidden;
+  }
+
+  .containerAuth {
+    display: flex;
+    width: 60vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 50px;
+    z-index: 312312;
+    .authWrapper {
+      display: flex;
+      background: var(--1, rgba(86, 197, 150, 0.30));
+      flex-direction: column;
+      border-radius: 50px;
+
+      .navigationWrapper {
+        display: flex;
+        padding: 30px 50px;
+        gap: 40px
+      }
+
+      .loginForm {
+        display: flex;
+        background: var(--1, rgba(86, 197, 150, 1));
+        padding: 50px;
+        flex-direction: column;
+        border-radius: 50px;
+      }
+    }
+  }
+}

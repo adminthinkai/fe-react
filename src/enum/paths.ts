@@ -1,0 +1,16 @@
+export enum Paths {
+  LOGIN = '/login',
+  SIGNUP = '/sign_up',
+  RESTORE = '/restore',
+  MAIN = '/main',
+  PRIVACY = '/privacy_policy',
+  SETTINGS = '/settings',
+  USERS = '/users',
+  BRANDING = '/branding',
+  ANALYTICS = '/analytics',
+  CHAT_AI = '/chat_ai',
+  CLASSES = '/classes',
+  HISTORY = '/history',
+  DOCUMENTATIONS = '/documentations',
+  SUPER_INVITE = '/super_admin_invite',
+}
